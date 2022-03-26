@@ -4,6 +4,147 @@
 	<meta charset="utf-8"/>
   	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Portfolio</title>
+	<style>
+		/* GLOBAL STYLES */
+body {
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: left;
+}
+
+.typewriter h1 {
+  line-height: 15px;
+  text-transform: lowercase;
+  color: #fff;
+  border-right: .15em solid orange;
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: .40em; /* Adjust as needed */
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typewriter h1:nth-child(1) {
+  width: 5.5em;
+  -webkit-animation: type 1s steps(8, end);
+  animation: type 1s steps(8, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h1:nth-child(2) {
+  width: 6.5em;
+  opacity: 0;
+  -webkit-animation: type2 1s steps(8, end);
+  animation: type2 1s steps(8, end);
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h1:nth-child(3) {
+  width: 5.5em;
+  opacity: 0;
+  -webkit-animation: type3 1s steps(8, end), blink .5s step-end infinite alternate;
+  animation: type3 1s steps(8, end), blink .25s step-end infinite alternate;
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+	</style>
 </head>
 <body>
   <div class="css-typing">
