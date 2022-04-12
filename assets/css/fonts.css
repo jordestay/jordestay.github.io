@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Jordestay;
+    src: url('assets/fonts/Jordestay-Regular.tff');
+}
+
+.handwriting {
+    font-family: Jordestay;
+}
