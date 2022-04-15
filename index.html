@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/asl.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/sketchbook.css">
 </head>
 
 <body>
-
     <!-- SECTION: Splashscreen -->
     <div class="splashscreen">
         <div class="preloader">
@@ -61,18 +61,18 @@
     <!-- END SECTION: Intro -->
     <main role="main">
         <!-- SECTION: About -->
-        <section class="about">
+        <!-- <section class="about">
             <div class="about__wrapper wrapper--small">
                 <div class="about__content">
                     <div class="about__content-blurb blurb blurb--framed">
-                        <h2 class="blurb__heading">Creativity<br>and vision</h2>
-                        <p class="blurb__copy no-margin">Are core values for a developer.</p>
+                        <h2 class="blurb__heading">Nothing is<br>impossible</h2>
+                        <p class="blurb__copy no-margin">If you just work hard enough at it</p>
                     </div>
                     <p class="about__content-signature">Jordan Taylor</p>
                 </div>
                 <img class="about__visual" src="assets/img/self-portrait.png" alt="Jordan Taylor">
             </div>
-        </section>
+        </section> -->
         <!-- END SECTION: About -->
         <!-- SECTION: App Design -->
         <!-- <section class="app-design">
@@ -99,54 +99,145 @@
         </section> -->
         <!-- END SECTION: Web Design -->
         <!-- SECTION: Work -->
+
         <section id="work" class="work">
             <h2 class="work__heading title">Latest Projects</h2>
             <div class="work__wrapper wrapper--large">
                 <ul class="work__list">
+
+
                     <li class="work__list-el work__list-el--is-active">
                         <div class="work__content">
                             <div class="work__content-blurb blurb blurb--framed">
                                 <h3 class="blurb__heading"><span id="letters">Hello World</span> ASL</h3>
                                 <p class="blurb__copy">An open source website and educational tool for learning sign language. Touch the hand for a preview.</p>
                             </div>
-                            <a class="transform-link" href="https://github.com/jordan-taylor-usu/hello-world-asl" target="_blank">See full project</a>
+                            <a class="transform-link" href="#0" target="_blank">See full project</a>
                         </div>
                         <div class="work__visual">
-                            <img alt="right hand" class="greeting" src="assets/img/asl/hand-colored-r.svg" id="asl" onclick="changeSVG()" />
+                            <img alt="right hand" class="greeting" style="cursor: pointer;" src="assets/img/asl/hand-colored-r.svg" id="asl" onclick="changeSVG()" />
                             <!-- <img src="assets/img/work-strategik.jpg" alt="Strategik INC"> -->
                         </div>
                     </li>
-                    <li class="work__list-el">
+
+                </ul>
+            </div>
+        </section>
+        <section class="work">
+            <div class="work__wrapper wrapper--large">
+                <ul class="work__list">
+                    <li class="work__list-el work__list-el--is-active">
                         <div class="work__content">
                             <div class="work__content-blurb blurb blurb--framed">
-                                <h3 class="blurb__heading">Medieval Minigolf<br /></h3>
-                                <p class="blurb__copy">A web app group project demonstrating how players track their score and order drinks while playing minigolf. Register for the full experience.</p>
+                                <h3 class="blurb__heading">Permafrost<br>Productions</h3>
+                                <p class="blurb__copy">A portfolio site for post-production video editing with embedded YouTube videos.</p>
                             </div>
-                            <a class="transform-link" href="http://medievalmini.golf:8000" target="_blank">See full project</a>
+                            <a class="transform-link" href="https://permafrostproductions.com/" target="_blank">See full project</a>
                         </div>
                         <div class="work__visual">
-<!--                             <a href="http://medievalmini.golf:8000" target="_blank"> -->
-				    <img src="assets/img/minigolf.jpg" alt="Medieval Minigolf splash page">
-<!-- 				</a> -->
+                            <!-- <div class="thumbnail-container">
+                                <div class="thumbnail">
+                                  <iframe src="https://permafrostproductions.com/" frameborder="0" onload="this.style.opacity = 1"></iframe>
+                                </div>
+                                </div> -->
+                            <a href="https://permafrostproductions.com/" style="display: inline;"><img src="assets/img/permafrost-productions.jpg" alt="Go Outside App"></a>
                         </div>
                     </li>
-                    <!-- <li class="work__list-el">
+                </ul>
+            </div>
+            <section class="work">
+                <div class="work__wrapper wrapper--large">
+                    <ul class="work__list">
+                        <li class="work__list-el work__list-el--is-active">
+                            <div class="work__content">
+                                <div class="work__content-blurb blurb blurb--framed">
+                                    <h3 class="blurb__heading">Medieval Minigolf<br /></h3>
+                                    <p class="blurb__copy">A web app group project demonstrating how players track their score and order drinks while playing minigolf. Register for the full experience.</p>
+                                </div>
+                                <a class="transform-link" href="http://medievalmini.golf:8000/register" target="_blank">See full project</a>
+                            </div>
+                            <div class="work__visual">
+                                <!-- <div class="thumbnail-container">
+                                <div class="thumbnail">
+                                  <iframe src="http://medievalmini.golf:8000" frameborder="0" onload="this.style.opacity = 1"></iframe>
+                                </div>
+                                </div> -->
+                                <a href="http://medievalmini.golf:8000/register" style="display: inline;"><img src="assets/img/minigolf.jpg" alt="Medieval Minigolf splash page"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </section>
+        <section class="work">
+            <div class="work__wrapper wrapper--large">
+                <ul class="work__list">
+                    <li class="work__list-el work__list-el--is-active">
                         <div class="work__content">
                             <div class="work__content-blurb blurb blurb--framed">
-                                <h3 class="blurb__heading">Closed Captions<br>YouTube Scraper</h3>
-                                <p class="blurb__copy">A browser extension that checks if the YouTube videos on your webpage have accessible captions.</p>
+                                <h3 class="blurb__heading">Personal<br>Sketchbook</h3>
+                                <p class="blurb__copy">A digital gallery showcasing a broad range of my personal art projects.</p>
                             </div>
-                            <a class="transform-link" href="#0">See full project</a>
+                            <a class="transform-link" href="../sketchbook.html">See full project</a>
                         </div>
-                        <div class="work__visual">
-                            <img src="assets/img/work-go-outside.jpg" alt="Go Outside App">
+                        <!-- <div class="work__visual"> -->
+                        <div class="imgLoader"></div>
+                        <div class="container">
+                            <a href="../sketchbook.html" style="display: inline;">
+                                <div class="book">
+                                    <div class="gap"></div>
+                                    <div class="pages">
+                                        <div class="page"></div>
+                                        <div class="page"></div>
+                                        <div class="page"></div>
+                                        <div class="page"></div>
+                                        <div class="page"></div>
+                                        <div class="page"></div>
+                                    </div>
+                                    <div class="flips">
+                                        <div class="flip flip1">
+                                            <div class="flip flip2">
+                                                <div class="flip flip3">
+                                                    <div class="flip flip4">
+                                                        <div class="flip flip5">
+                                                            <div class="flip flip6">
+                                                                <div class="flip flip7"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- <img src="assets/img/work-go-outside.jpg" alt="Go Outside App"> -->
                         </div>
-                    </li> -->
+                        <!-- </div> -->
+                    </li>
                 </ul>
-                <ul class="work__navigation">
-                    <li class="work__navigation-el work__navigation-el--is-active"></li>
-                    <li class="work__navigation-el"></li>
-                    <!-- <li class="work__navigation-el"></li> -->
+            </div>
+        </section>
+        <section class="work">
+            <div class="work__wrapper wrapper--large">
+                <ul class="work__list">
+
+
+                    <li class="work__list-el work__list-el--is-active">
+                        <div class="work__content">
+                            <div class="work__content-blurb blurb blurb--framed">
+                                <h3 class="blurb__heading">USU IT: Web<br>Development</h3>
+                                <p class="blurb__copy">A catalog of the sites I worked on as a professional website technician.</p>
+                            </div>
+                            <a class="transform-link" href="usu-it-web.html">See full project</a>
+                        </div>
+                        <div class="work__visual" style="background-color: transparent; box-shadow: none;">
+                            <a href="usu-it-web.html" style="display: inline;"><img src="assets/img/web-design-visual.png" alt=""></a>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </section>
@@ -191,27 +282,40 @@
             </div>
         </section> -->
         <!-- END SECTION: Blog -->
+
+        <!-- <section class="about">
+            <div class="about__wrapper wrapper--small">
+                <div class="about__content">
+                    <div class="about__content-blurb blurb blurb--framed">
+                        <h2 class="blurb__heading">Contact Me</h2>
+                        <p class="blurb__copy no-margin">
+                            <a class="transform-link" href="mailto:jordestay@gmail.com">jordestay@gmail.com</a>
+                            <a class="transform-link" href="https://www.linkedin.com/in/jordan-d-taylor/">LinkedIn</a>
+                            <a class="transform-link" href="https://github.com/jordestay">Github</a>
+                            <a class="transform-link" href="https://discord.com/users/Jordestay#9217">Discord</a>
+                        </p>
+                    </div>
+                    <p class="about__content-signature">Jordan Taylor</p>
+                </div>
+                <img class="about__visual" src="assets/img/self-portrait.png" alt="Jordan Taylor">
+            </div>
+        </section> -->
+
         <!-- SECTION: Contact -->
         <section id="contact" class="contact">
             <h2 class="contact__heading title">Contact Me</h2>
             <div class="contact__wrapper wrapper--large">
                 <div class="contact__visual">
                     <img src="assets/img/contact-map.png" alt="Jordan Taylor's location">
+                    <!-- <img src="assets/img/self-portrait.png" alt="Jordan Taylor"> -->
                 </div>
-		    <div class="contact__form">
-		    <a class="transform-link" href="mailto:jordestay@gmail.com">jordestay@gmail.com</a><br />
-		    <a class="transform-link" href="https://www.linkedin.com/in/jordan-d-taylor/">LinkedIn</a><br />
-		    <a class="transform-link" href="https://github.com/jordestay">Github</a><br />
-		    <a class="transform-link" href="https://discord.com/users/Jordestay#9217">Discord</a>
-                </div>
-		    
                 <!-- Simple form setup: formspree.io -->
-<!--                 <form class="contact__form">
-                    <input class="contact__form-el contact__form-el--name" type="text" placeholder="Your Name" spellcheck="false">
-                    <input class="contact__form-el contact__form-el--email" type="email" placeholder="Your Email" spellcheck="false">
-                    <textarea class="contact__form-el contact__form-el--message" placeholder="Your Message"></textarea>
-                    <input class="contact__form-el contact__form-el--submit" type="submit" value="Send">
-                </form> -->
+                <form class="contact__form">
+                    <a class="transform-link" href="mailto:jordestay@gmail.com">jordestay@gmail.com</a>
+                    <a class="transform-link" href="https://www.linkedin.com/in/jordan-d-taylor/">LinkedIn</a>
+                    <a class="transform-link" href="https://github.com/jordestay">Github</a>
+                    <a class="transform-link" href="https://discord.com/users/Jordestay#9217">Discord</a>
+                </form>
             </div>
         </section>
         <!-- END SECTION: Contact -->
