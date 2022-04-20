@@ -961,17 +961,22 @@ input[type="button"]:focus {
     z-index: 1
 }
 
+.about__content-blurb p {
+    max-width: 500px
+}
+
 .about__content-signature {
     position: absolute;
-    bottom: -175px;
+    bottom: -100px;
     left: 0;
     font-size: 30px;
     font-family: "Allura", cursive
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1020px) {
     .about {
-        padding: 60px 0
+        padding: 60px 0;
+        height: 800px
     }
     .about__wrapper {
         -webkit-box-align: start;
@@ -1014,7 +1019,7 @@ input[type="button"]:focus {
 
 @media (max-width: 767px) {
     .about {
-        height: 540px
+        height: 710px
     }
     .about__visual {
         width: 335px
@@ -1026,7 +1031,7 @@ input[type="button"]:focus {
 
 @media (max-width: 480px) {
     .about {
-        height: 480px
+        height: 725px
     }
     .about__wrapper::before {
         display: none
