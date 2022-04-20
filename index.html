@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Personal</title>
+    <title>Jordan Taylor - Personal Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,11 +31,9 @@
                 <ul class="navigation__list">
                     <li><a href="#0">Home</a></li>
                     <li><a href="#work">Portfolio</a></li>
-                    <!-- <li><a href="#blog">Blog</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <!-- <a class="navigation__cta button" href="#0">Get A Quote</a> -->
             <div class="navigation__burger">
                 <span class="navigation__burger-el navigation__burger-el--top"></span>
                 <span class="navigation__burger-el navigation__burger-el--middle"></span>
@@ -48,7 +46,6 @@
     <header class="header">
         <div class="introduction">
             <h1 class="introduction__content">
-                <!-- <span class="introduction__content-el introduction__content-el--name">Hi, I'm</span> -->
                 <span class="introduction__content-el introduction__content-el--description">J O R</span>
                 <span class="introduction__content-el introduction__content-el--description">D E S</span>
                 <span class="introduction__content-el introduction__content-el--description">T A Y</span>
@@ -61,51 +58,53 @@
     <!-- END SECTION: Intro -->
     <main role="main">
         <!-- SECTION: About -->
-        <!-- <section class="about">
+        <section class="about">
             <div class="about__wrapper wrapper--small">
                 <div class="about__content">
-                    <div class="about__content-blurb blurb blurb--framed">
-                        <h2 class="blurb__heading">Nothing is<br>impossible</h2>
-                        <p class="blurb__copy no-margin">If you just work hard enough at it</p>
+                    <div class="about__content-blurb blurb blurb--framed inverter">
+                        <h2 class="blurb__heading">About</h2>
+                        <p class="blurb__copy no-margin">Hey, I'm Jordan Taylor. In my free time I like to hunt for fishing lures and go hiking with my dogs. You may catch me flying a drone or tinkering with electronics from time to time too. I love solving problems, especially when
+                            I can help others. I am self-motivated and I appreciate when my efforts are recognized. I continually seek feedback to feasibly meet customer needs. I am motivated by opportunities to grow my skills and am on the constant lookout
+                            for new things to learn.</p>
                     </div>
+                    <a class="transform-link" href="resume-jordan-taylor.pdf" target="_blank">See Resume</a>
                     <p class="about__content-signature">Jordan Taylor</p>
                 </div>
                 <img class="about__visual" src="assets/img/self-portrait.png" alt="Jordan Taylor">
             </div>
-        </section> -->
+        </section>
         <!-- END SECTION: About -->
         <!-- SECTION: App Design -->
-        <!-- <section class="app-design">
+        <section class="app-design">
             <div class="app-design__wrapper wrapper--large">
                 <div class="app-design__content blurb">
-                    <h2 class="blurb__heading">Topaz App <br>Design</h2>
-                    <p class="blurb__copy blurb__copy--tight">App design for Topaz, an awesome creative company from New York.</p>
-                    <a class="transform-link" href="#0">Check it out</a>
+                    <h2 class="blurb__heading">Medieval <br />Minigolf</h2>
+                    <p class="blurb__copy blurb__copy--tight">Web app for players to track their score and order drinks—a software development group project for USU.</p>
+                    <a class="transform-link" href="http://medievalmini.golf:8000/register" target="_blank">Check it out</a>
                 </div>
             </div>
             <figure class="app-design__visual"></figure>
-        </section> -->
+        </section>
         <!-- END SECTION: App Design -->
         <!-- SECTION: Web Design -->
-        <!-- <section class="web-design">
+        <div class="work__visual" style="background-color: transparent; box-shadow: none;">
+        </div>
+        <section class="web-design">
             <div class="web-design__wrapper wrapper--small">
                 <div class="web-design__content blurb">
-                    <h2 class="blurb__heading">MGF Web <br>Design</h2>
-                    <p class="blurb__copy blurb__copy--tight">Web design I made for MGF, an amazing architecture agency from London.</p>
-                    <a class="transform-link" href="#0">Check it out</a>
+                    <h2 class="blurb__heading">Caine College <br />of the Arts</h2>
+                    <p class="blurb__copy blurb__copy--tight">Web development I worked on for USU, an amazing engineering school and my alma mater.</p>
+                    <a class="transform-link" href="https://cca.usu.edu/" target="_blank">Check it out</a>
                 </div>
             </div>
             <figure class="web-design__visual"></figure>
-        </section> -->
+        </section>
         <!-- END SECTION: Web Design -->
         <!-- SECTION: Work -->
-
         <section id="work" class="work">
             <h2 class="work__heading title">Latest Projects</h2>
             <div class="work__wrapper wrapper--large">
                 <ul class="work__list">
-
-
                     <li class="work__list-el work__list-el--is-active">
                         <div class="work__content">
                             <div class="work__content-blurb blurb blurb--framed">
@@ -116,72 +115,28 @@
                         </div>
                         <div class="work__visual">
                             <img alt="right hand" class="greeting" style="cursor: pointer;" src="assets/img/asl/hand-colored-r.svg" id="asl" onclick="changeSVG()" />
-                            <!-- <img src="assets/img/work-strategik.jpg" alt="Strategik INC"> -->
                         </div>
                     </li>
-
-                </ul>
-            </div>
-        </section>
-        <section class="work">
-            <div class="work__wrapper wrapper--large">
-                <ul class="work__list">
-                    <li class="work__list-el work__list-el--is-active">
+                    <li class="work__list-el">
                         <div class="work__content">
                             <div class="work__content-blurb blurb blurb--framed">
-                                <h3 class="blurb__heading">Permafrost<br>Productions</h3>
+                                <h3 class="blurb__heading">Permafrost<br />Productions</h3>
                                 <p class="blurb__copy">A portfolio site for post-production video editing with embedded YouTube videos.</p>
                             </div>
                             <a class="transform-link" href="https://permafrostproductions.com/" target="_blank">See full project</a>
                         </div>
                         <div class="work__visual">
-                            <!-- <div class="thumbnail-container">
-                                <div class="thumbnail">
-                                  <iframe src="https://permafrostproductions.com/" frameborder="0" onload="this.style.opacity = 1"></iframe>
-                                </div>
-                                </div> -->
                             <a href="https://permafrostproductions.com/" style="display: inline;"><img src="assets/img/permafrost-productions.jpg" alt="Go Outside App"></a>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <section class="work">
-                <div class="work__wrapper wrapper--large">
-                    <ul class="work__list">
-                        <li class="work__list-el work__list-el--is-active">
-                            <div class="work__content">
-                                <div class="work__content-blurb blurb blurb--framed">
-                                    <h3 class="blurb__heading">Medieval Minigolf<br /></h3>
-                                    <p class="blurb__copy">A web app group project demonstrating how players track their score and order drinks while playing minigolf. Register for the full experience.</p>
-                                </div>
-                                <a class="transform-link" href="http://medievalmini.golf:8000/register" target="_blank">See full project</a>
-                            </div>
-                            <div class="work__visual">
-                                <!-- <div class="thumbnail-container">
-                                <div class="thumbnail">
-                                  <iframe src="http://medievalmini.golf:8000" frameborder="0" onload="this.style.opacity = 1"></iframe>
-                                </div>
-                                </div> -->
-                                <a href="http://medievalmini.golf:8000/register" style="display: inline;"><img src="assets/img/minigolf.jpg" alt="Medieval Minigolf splash page"></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-        </section>
-        <section class="work">
-            <div class="work__wrapper wrapper--large">
-                <ul class="work__list">
-                    <li class="work__list-el work__list-el--is-active">
+                    <li class="work__list-el">
                         <div class="work__content">
                             <div class="work__content-blurb blurb blurb--framed">
-                                <h3 class="blurb__heading">Personal<br>Sketchbook</h3>
+                                <h3 class="blurb__heading">Personal<br />Sketchbook</h3>
                                 <p class="blurb__copy">A digital gallery showcasing a broad range of my personal art projects.</p>
                             </div>
                             <a class="transform-link" href="../sketchbook.html">See full project</a>
                         </div>
-                        <!-- <div class="work__visual"> -->
                         <div class="imgLoader"></div>
                         <div class="container">
                             <a href="../sketchbook.html" style="display: inline;">
@@ -212,104 +167,25 @@
                                     </div>
                                 </div>
                             </a>
-
-                            <!-- <img src="assets/img/work-go-outside.jpg" alt="Go Outside App"> -->
-                        </div>
-                        <!-- </div> -->
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="work">
-            <div class="work__wrapper wrapper--large">
-                <ul class="work__list">
-
-
-                    <li class="work__list-el work__list-el--is-active">
-                        <div class="work__content">
-                            <div class="work__content-blurb blurb blurb--framed">
-                                <h3 class="blurb__heading">USU IT: Web<br>Development</h3>
-                                <p class="blurb__copy">A catalog of the sites I worked on as a professional website technician.</p>
-                            </div>
-                            <a class="transform-link" href="usu-it-web.html">See full project</a>
-                        </div>
-                        <div class="work__visual" style="background-color: transparent; box-shadow: none;">
-                            <a href="usu-it-web.html" style="display: inline;"><img src="assets/img/web-design-visual.png" alt=""></a>
                         </div>
                     </li>
-
+                </ul>
+                <ul class="work__navigation">
+                    <li class="work__navigation-el work__navigation-el--is-active"></li>
+                    <li class="work__navigation-el"></li>
+                    <li class="work__navigation-el"></li>
                 </ul>
             </div>
+
         </section>
         <!-- END SECTION: Work -->
-        <!-- SECTION: Blog -->
-        <!-- <section id="blog" class="blog">
-            <h2 class="blog__heading title">Blog Posts</h2>
-            <div class="blog__wrapper wrapper--large">
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/blog-post-1.jpg" alt="Man viewing work plans">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Days in the office</h3>
-                        <p>I love using UI Kits vs website templates because UI Kits give you an easier way to use elements compared to templates.</p>
-                        <a class="transform-link" href="#0">Read full article</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/blog-post-2.jpg" alt="Man hanging pictures">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Why I use CCO images</h3>
-                        <p>CCO images are awesome because you don't have to credit the author, and you can use them anywhere, anytime.</p>
-                        <a class="transform-link" href="#0">Read full article</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/blog-post-3.jpg" alt="Men working at a desk">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Designing for IOT</h3>
-                        <p>Internet of things is coming so quickly, we as designers will have to design UI and UX for more things in the future.</p>
-                        <a class="transform-link" href="#0">Read full article</a>
-                    </div>
-                </article>
-            </div>
-            <div class="blog__view-more">
-                <a class="button blog__view-more--el" href="#0">View More</a>
-            </div>
-        </section> -->
-        <!-- END SECTION: Blog -->
-
-        <!-- <section class="about">
-            <div class="about__wrapper wrapper--small">
-                <div class="about__content">
-                    <div class="about__content-blurb blurb blurb--framed">
-                        <h2 class="blurb__heading">Contact Me</h2>
-                        <p class="blurb__copy no-margin">
-                            <a class="transform-link" href="mailto:jordestay@gmail.com">jordestay@gmail.com</a>
-                            <a class="transform-link" href="https://www.linkedin.com/in/jordan-d-taylor/">LinkedIn</a>
-                            <a class="transform-link" href="https://github.com/jordestay">Github</a>
-                            <a class="transform-link" href="https://discord.com/users/Jordestay#9217">Discord</a>
-                        </p>
-                    </div>
-                    <p class="about__content-signature">Jordan Taylor</p>
-                </div>
-                <img class="about__visual" src="assets/img/self-portrait.png" alt="Jordan Taylor">
-            </div>
-        </section> -->
-
         <!-- SECTION: Contact -->
         <section id="contact" class="contact">
             <h2 class="contact__heading title">Contact Me</h2>
             <div class="contact__wrapper wrapper--large">
                 <div class="contact__visual">
-                    <img src="assets/img/contact-map.png" alt="Jordan Taylor's location">
-                    <!-- <img src="assets/img/self-portrait.png" alt="Jordan Taylor"> -->
+                    <a href="https://www.usu.edu/map/index.cfm?id=1" style="display: inline;"><img src="assets/img/contact-map.png" alt="Jordan Taylor's location"></a>
                 </div>
-                <!-- Simple form setup: formspree.io -->
                 <form class="contact__form">
                     <a class="transform-link" href="mailto:jordestay@gmail.com">jordestay@gmail.com</a>
                     <a class="transform-link" href="https://www.linkedin.com/in/jordan-d-taylor/">LinkedIn</a>
@@ -323,7 +199,7 @@
     <!-- SECTION: Footer -->
     <footer class="footer">
         <div class="footer__wrapper wrapper--large">
-            <p class="footer__copyright no-margin">&copy; 2022 Jordan Taylor</p>
+            <p class="footer__copyright no-margin">2022 Jordan Taylor</p>
             <a class="footer__logo logo" href="#0">JDT</a>
             <a class="footer__arrow" href="#top">
                 <svg class="footer__arrow-el" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M315.4 365c-336-305-345-315-290-351 18-12 32-14 45-8 10 5 145 123 300 262l281 253 196-178c108-98 237-215 287-260 50-46 98-83 107-83s27 9 40 19c20 16 22 23 14 46 -12 33-623 585-647 585C638.4 650 489.4 522 315.4 365z"/></g></svg>
@@ -331,7 +207,6 @@
         </div>
     </footer>
     <!-- END SECTION: Footer -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="assets/js/asl.js"></script>
     <!-- jQuery local fallback -->
@@ -339,25 +214,6 @@
         window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
     </script>
     <script src="assets/js/functions-min.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID and uncomment -->
-    <!--
-	<script>
-	(function(b, o, i, l, e, r) {
-		b.GoogleAnalyticsObject = l;
-		b[l] || (b[l] =
-			function() {
-				(b[l].q = b[l].q || []).push(arguments)
-			});
-		b[l].l = +new Date;
-		e = o.createElement(i);
-		r = o.getElementsByTagName(i)[0];
-		e.src = '//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e, r)
-	}(window, document, 'script', 'ga'));
-	ga('create', 'UA-XXXXX-X', 'auto');
-	ga('send', 'pageview');
-	</script>
-	-->
 </body>
 
 </html>
