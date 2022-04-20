@@ -2,7 +2,6 @@ var count = 0;
 const message = 'Hello World';
 var letters = Array.from(message.replace(/\W/g, ''));
 
-document.title = message;
 document.getElementById("letters").innerHTML = message;
 
 function changeSVG() {
