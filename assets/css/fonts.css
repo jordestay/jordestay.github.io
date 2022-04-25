@@ -5,4 +5,22 @@
 
 .handwriting {
     font-family: Jordestay;
+    font-size: 50px;
 }
+
+@media (max-width: 767px) {
+    .handwriting {
+        font-size: 32px
+    }
+}
+
+@media (max-width: 480px) {
+    .handwriting {
+        font-size: 20px
+    }
+}
+
+
+/* .inverter {
+    background: inherit;
+} */
