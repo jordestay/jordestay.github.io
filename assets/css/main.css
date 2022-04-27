@@ -976,7 +976,7 @@ input[type="button"]:focus {
 @media (max-width: 1020px) {
     .about {
         padding: 60px 0;
-        height: 800px
+        height: 850px
     }
     .about__wrapper {
         -webkit-box-align: start;
@@ -1019,7 +1019,7 @@ input[type="button"]:focus {
 
 @media (max-width: 767px) {
     .about {
-        height: 710px
+        height: 770px
     }
     .about__visual {
         width: 335px
@@ -1031,7 +1031,7 @@ input[type="button"]:focus {
 
 @media (max-width: 480px) {
     .about {
-        height: 725px
+        height: 780px
     }
     .about__wrapper::before {
         display: none
