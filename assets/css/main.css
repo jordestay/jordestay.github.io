@@ -1167,6 +1167,9 @@ input[type="button"]:focus {
     .web-design__content {
         text-align: center
     }
+    .web-design__content p {
+        margin: 0 auto 20px auto
+    }
     .web-design__content h2 {
         font-size: 32px
     }
