@@ -10,6 +10,8 @@
     <meta name="keywords" content="portfolio, html5, web-design, computer-science">
     <meta name="author" content="Jordan Taylor">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/comparison-slider.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
 
 <body>
@@ -45,9 +47,8 @@
     <header class="header">
         <div class="introduction">
             <h1 class="introduction__content">
-                <span class="introduction__content-el introduction__content-el--name">Professional Works</span>
-                <span class="introduction__content-el introduction__content-el--description">USU IT Web</span>
-                <span class="introduction__content-el introduction__content-el--job">Jordan DeSpain Taylor</span>
+                <span class="introduction__content-el introduction__content-el--description">USU <br />IT Web</span>
+                <span class="introduction__content-el introduction__content-el--job">by Jordan Taylor</span>
             </h1>
             <a style="margin-bottom: 50px;" href="#work"><svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z"/></g></svg>
 			</a>
@@ -55,180 +56,69 @@
     </header>
     <!-- END SECTION: Intro -->
     <main role="main">
-
         <!-- SECTION: Blog -->
         <section id="blog" class="blog">
-            <!-- <h2 class="blog__heading title">Blog Posts</h2> -->
-            <!-- <p>These websites were converted from bootstrap version 3 to version 4 according to Utah State University's online styling guide. In addition to editing and updating HTML, I worked on site setup, quality assurance for accessibility, creating captions for
-                videos, editing photos in Photoshop, and training new users in the OU Campus content management service.</p> -->
+            <h2 class="blog__heading title">Site Migration</h2>
             <div class="blog__wrapper wrapper--large">
                 <article class="blog__post">
                     <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/berryman.jpg" alt="">
+                        <div class="c-compare" style="--value:50%;">
+                            <img class="c-compare__left" src="/assets/img/it-web/arts-access-bs4.jpg" alt="Color" />
+                            <img class="c-compare__right" src="/assets/img/it-web/arts-access-bs3.jpg" alt="B/W" />
+                            <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50" oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+                        </div>
                     </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Berryman Institute</h3>
+                    <div class="blog__post-excerpt" style="text-align: center;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>Bootstrap v4</div>
+                            <div>Bootstrap v3</div>
+                        </div>
+                        <h3 style="margin-top: 0;">Arts Access</h3>
 
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://berrymaninstitute.org/">Visit Site</a>
+                        <a style="margin-bottom: 50px;" class="transform-link" href="https://cca.usu.edu/artsaccess/index">Visit Site</a>
                     </div>
                 </article>
                 <article class="blog__post">
                     <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/care-about-childcare.jpg" alt="">
+                        <div id="comparison">
+                            <div class="c-compare" style="--value:50%;">
+                                <img class="c-compare__left" src="/assets/img/it-web/wellness-home-bs4.jpg" alt="Color" />
+                                <img class="c-compare__right" src="/assets/img/it-web/wellness-home-bs3.jpg" alt="B/W" />
+                                <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50" oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Care About Childcare</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/careaboutchildcare/">Visit Site</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/cca.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Caine College of the Arts</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://cca.usu.edu/">Visit Site</a>
-                    </div>
-                </article>
-
-            </div>
-            <div class="blog__wrapper wrapper--large">
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/commencement.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Commencement</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/commencement/">Visit Site</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/epc.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Educational Policies Committee</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/epc/">Visit Site</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/equity.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Office of Equity</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/equity/">Visit Site</a>
-                    </div>
-                </article>
-
-            </div>
-            <div class="blog__wrapper wrapper--large">
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/latinx.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Latinx Cultural Center</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/latinx/">Visit Site</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/legal.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Office of Legal Affairs</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/legal/index">Visit Site</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/qcnr.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Quinney Research Library</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://qcnr.usu.edu/quinney/">Visit Site</a>
-                    </div>
-                </article>
-
-            </div>
-            <div class="blog__wrapper wrapper--large">
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/retention.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Student Retention &amp; Completion</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/retention/">Visit Site</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/sea.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Staff Employee Association</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/sea/">Visit Site</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/sexual-respect.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Sexual Respect</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/sexual-respect/">Visit Site</a>
-                    </div>
-                </article>
-
-            </div>
-            <div class="blog__wrapper wrapper--large">
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/urpd.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Utah Registry for Professional Development</h3>
-
-                        <a style="margin-bottom: 50px; color: gray;" class="transform-link" href="#">Taken Down</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/utf.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Undergraduate Teaching Fellows</h3>
-
-                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/utf/">Visit Site</a>
-                    </div>
-                </article>
-                <article class="blog__post">
-                    <div class="blog__post-thumbnail">
-                        <img src="assets/img/it-web/wellness.jpg" alt="">
-                    </div>
-                    <div class="blog__post-excerpt">
-                        <h3>Wellness</h3>
+                    <div class="blog__post-excerpt" style="text-align: center;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>Bootstrap v4</div>
+                            <div>Bootstrap v3</div>
+                        </div>
+                        <h3 style="margin-top: 0;">Wellness</h3>
 
                         <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/wellness/">Visit Site</a>
                     </div>
                 </article>
+                <article class="blog__post">
+                    <div class="blog__post-thumbnail">
+                        <div id="comparison">
+                            <div class="c-compare" style="--value:50%;">
+                                <img class="c-compare__left" src="/assets/img/it-web/urpd-home-bs4.jpg" alt="Color" />
+                                <img class="c-compare__right" src="/assets/img/it-web/urpd-home-bs3.jpg" alt="B/W" />
+                                <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50" oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__post-excerpt" style="text-align: center;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>Bootstrap v4</div>
+                            <div>Bootstrap v3</div>
+                        </div>
+                        <h3 style="margin-top: 0;">URPD</h3>
 
+                        <p>Site Retired</p>
+                    </div>
+                </article>
             </div>
-            <!-- <div class="blog__view-more">
-                <a style="margin-bottom: 50px;" class="button blog__view-more--el" href="#0">View More</a>
-            </div> -->
         </section>
         <!-- END SECTION: Blog -->
 
@@ -247,7 +137,6 @@
     <!-- END SECTION: Footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="assets/js/asl.js"></script>
     <!-- jQuery local fallback -->
     <script>
         window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
