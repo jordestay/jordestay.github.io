@@ -1385,7 +1385,11 @@ input[type="button"]:focus {
 .blog__post {
     width: 33.33%;
     margin-right: 30px;
-    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.blog__post:last-child {
+    margin-right: 0
 }
 
 .blog__post-thumbnail {
