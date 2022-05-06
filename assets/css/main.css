@@ -1433,9 +1433,6 @@ input[type="button"]:focus {
         max-width: 100%;
         margin: 0 0 45px 0
     }
-    .blog__post:last-child {
-        margin-bottom: 0
-    }
     .blog__post-excerpt {
         text-align: center
     }
