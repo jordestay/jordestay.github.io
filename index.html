@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/asl.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/sketchbook.css">
+    <link rel="stylesheet" href="assets/css/comparison-slider.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
 
@@ -102,6 +103,71 @@
             <figure class="web-design__visual"></figure>
         </section>
         <!-- END SECTION: Web Design -->
+	<!-- SECTION: Blog -->
+        <section id="blog" class="blog">
+            <h2 class="blog__heading title" id="migrations">USU Site <br />Migration</h2>
+            <div class="blog__wrapper wrapper--large">
+                <article class="blog__post">
+                    <div class="blog__post-thumbnail">
+                        <div class="c-compare" style="--value:50%;">
+                            <img class="c-compare__left" src="/assets/img/it-web/arts-access-bs4.jpg" alt="Arts Access homepage updated in Bootstrap 4" />
+                            <img class="c-compare__right" src="/assets/img/it-web/arts-access-bs3.jpg" alt="Arts Access homepage in Bootstrap 3" />
+                            <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50" oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+                        </div>
+                    </div>
+                    <div class="blog__post-excerpt" style="text-align: center;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>Bootstrap v4</div>
+                            <div>Bootstrap v3</div>
+                        </div>
+                        <h3 style="margin-top: 0;">Arts Access</h3>
+
+                        <a style="margin-bottom: 50px;" class="transform-link" href="https://cca.usu.edu/artsaccess/index">Visit Site</a>
+                    </div>
+                </article>
+                <article class="blog__post">
+                    <div class="blog__post-thumbnail">
+                        <div id="comparison">
+                            <div class="c-compare" style="--value:50%;">
+                                <img class="c-compare__left" src="/assets/img/it-web/wellness-home-bs4.jpg" alt="Wellness homepage updated in Bootstrap 4" />
+                                <img class="c-compare__right" src="/assets/img/it-web/wellness-home-bs3.jpg" alt="Wellness homepage in Bootstrap 3" />
+                                <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50" oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__post-excerpt" style="text-align: center;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>Bootstrap v4</div>
+                            <div>Bootstrap v3</div>
+                        </div>
+                        <h3 style="margin-top: 0;">Wellness</h3>
+
+                        <a style="margin-bottom: 50px;" class="transform-link" href="https://www.usu.edu/wellness/">Visit Site</a>
+                    </div>
+                </article>
+                <article class="blog__post">
+                    <div class="blog__post-thumbnail">
+                        <div id="comparison">
+                            <div class="c-compare" style="--value:50%;">
+                                <img class="c-compare__left" src="/assets/img/it-web/urpd-home-bs4.jpg" alt="URPD homepage updated in Bootstrap 4" />
+                                <img class="c-compare__right" src="/assets/img/it-web/urpd-home-bs3.jpg" alt="URPD homepage in Bootstrap 3" />
+                                <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50" oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__post-excerpt" style="text-align: center;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>Bootstrap v4</div>
+                            <div>Bootstrap v3</div>
+                        </div>
+                        <h3 style="margin-top: 0;">URPD</h3>
+
+                        <p>Site Retired</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- END SECTION: Blog -->
         <!-- SECTION: Work -->
         <section id="work" class="work">
             <h2 class="work__heading title">Latest Projects</h2>
