@@ -6,7 +6,7 @@
     --w: 16;
     --thumb-bgc: #2046f2;
     --thumb-bgc-focus: hsla(226, 70%, 70%, 0.7);
-    --thumb-w: 1rem;
+    --thumb-w: 13px;
     margin: var(--m);
     position: relative;
 }
