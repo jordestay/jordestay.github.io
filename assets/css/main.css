@@ -879,7 +879,7 @@ input[type="button"]:focus {
     font-size: 16vw;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 10px 18px 35px rgba(88, 88, 88, 0.23)
+    text-shadow: 10px 18px 35px rgba(48, 48, 48, 0.23)
 }
 
 .introduction__content-el--job {
