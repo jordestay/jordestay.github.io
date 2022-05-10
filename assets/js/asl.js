@@ -47,11 +47,12 @@ function highlightLetter(count) {
 const svgImage = document.getElementById("asl");
 
 svgImage.addEventListener('click', () => {
-  alert('Next Letter');
+//   alert('Next Letter');
+  changeSVG();
 });
 
 svgImage.addEventListener('keydown', (event) => {
   if (event.code === 'Space' || event.code === 'Enter') {
-    button.click();
+    changeSVG();
   }
 });
