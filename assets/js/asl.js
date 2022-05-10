@@ -42,3 +42,16 @@ function highlightLetter(count) {
     // colorText += "!";
     document.getElementById("letters").innerHTML = colorText;
 }
+
+
+const svgImage = document.getElementById("asl");
+
+svgImage.addEventListener('click', () => {
+  alert('Next Letter');
+});
+
+svgImage.addEventListener('keydown', (event) => {
+  if (event.code === 'Space' || event.code === 'Enter') {
+    button.click();
+  }
+});
