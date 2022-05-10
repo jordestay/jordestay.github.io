@@ -185,9 +185,20 @@ $(document).ready(function() {
 	}
   
   /***************** Work Carousel ******************/
+
+  const workItem = document.getElementById('.work__navigation-el');
+
+  workItem.addEventListener('click', () => {
+  nextWork();
+});
+
+	workItem.addEventListener('keydown', (event) => {
+  if (event.code === 'Space' || event.code === 'Enter') {
+	nextWork();
+  }
+});
   
-  $('.work__navigation-el').click(function() {
-	  
+function nextWork() {	  
 	  var $this = $(this),
 	  		position = $this.parent().children().index($this);
 	  		
@@ -196,6 +207,6 @@ $(document).ready(function() {
 	  $('.work__list').children().removeClass('work__list-el--is-active');
 	  $('.work__list').children().eq(position).addClass('work__list-el--is-active');
 	  
-  });
+  }
 
 });
